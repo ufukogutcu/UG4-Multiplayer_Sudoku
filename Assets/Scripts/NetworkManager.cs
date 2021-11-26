@@ -14,13 +14,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     }
 
-    private void Awake()
-    {
-
-      PhotonNetwork.AutomaticallySyncScene = true;
-
-    }
-
     public void Connect()
     {
 
@@ -33,13 +26,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
 
       PhotonNetwork.JoinRandomRoom();
-
-    }
-
-    public void CreateRoom()
-    {
-
-      PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers=2 });
+      SceneManager.LoadScene("LobbyMultiplayer");
+  
 
     }
 
@@ -54,22 +42,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
 
       Debug.Log("Joined a room");
-      SceneManager.LoadScene("LobbyMultiplayer");
+      
 
     }
-
-    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
-    {
-        //PhotonNetwork.LoadLevel(2);
-    }
-
-    public void StartGame()
-    {
-
-      PhotonNetwork.LoadLevel("Multiplayer");
-
-    }
-
-
 
 }
