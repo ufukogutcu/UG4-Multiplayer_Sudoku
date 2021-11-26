@@ -10,9 +10,17 @@ public class NickName : MonoBehaviourPunCallbacks
 
     public GameObject panel;
 
+    void Start()
+    {
+        if(PhotonNetwork.LocalPlayer.NickName!=""){
+            Destroy(panel);
+        }
+    }
+
     public void setNickname(InputField code){
+
         string name;
-        
+
         if(code.text==""){
             name="Player";
         }else{
