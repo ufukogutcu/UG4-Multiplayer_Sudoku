@@ -25,8 +25,7 @@ public class HostNetworkManager : MonoBehaviourPunCallbacks
 
     }
 
-    public GameObject codefield;
-    public GameObject codebutton;
+    public GameObject creation;
 
     public void CreateRoom(InputField code){
 
@@ -40,7 +39,7 @@ public class HostNetworkManager : MonoBehaviourPunCallbacks
         }
 
         PhotonNetwork.CreateRoom(room_code, new RoomOptions { MaxPlayers=2 });
-        Destroy(codefield);Destroy(codebutton);
+        Destroy(creation);
         Debug.Log("Lobby Created");
 
     }
