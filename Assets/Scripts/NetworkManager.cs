@@ -26,9 +26,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
 
       PhotonNetwork.JoinRandomRoom();
-      SceneManager.LoadScene("LobbyMultiplayer");
   
-
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
@@ -42,7 +40,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
 
       Debug.Log("Joined a room");
-      
+      SceneManager.LoadScene("LobbyMultiplayer");
 
     }
 

@@ -18,7 +18,7 @@ public class LobbyNetworkManager : MonoBehaviourPunCallbacks
     {
 
         PhotonNetwork.LeaveRoom();
-        Debug.Log("Lobby Closed");
+        Debug.Log("Left lobby");
 
     }
 }
