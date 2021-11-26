@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
+using Photon.Realtime;
+using UnityEngine.UI;
 
 public class HostNetworkManager : MonoBehaviourPunCallbacks
 {
+
     public void GoBack()
     {
 
@@ -20,5 +23,29 @@ public class HostNetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LeaveRoom();
         Debug.Log("Left lobby");
 
+    }
+
+    public GameObject codefield;
+    public GameObject codebutton;
+
+    public void CreateRoom(InputField code){
+
+        string text = code.text;
+        string room_code;
+
+        if(text==""){
+            room_code = RandomCode();
+        }else{
+            room_code = text;
+        }
+
+        PhotonNetwork.CreateRoom(room_code, new RoomOptions { MaxPlayers=2 });
+        Destroy(codefield);Destroy(codebutton);
+        Debug.Log("Lobby Created");
+
+    }
+
+    private string RandomCode(){
+        return "abcde";
     }
 }

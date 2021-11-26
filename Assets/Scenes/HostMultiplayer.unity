@@ -517,9 +517,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NetworkJoinByCode, Assembly-CSharp
-        m_MethodName: JoinRoomByCode
+      - m_Target: {fileID: 1555923624}
+        m_TargetAssemblyTypeName: HostNetworkManager, Assembly-CSharp
+        m_MethodName: CreateRoom
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1829877494}
@@ -1073,6 +1073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaacfae8614f1b545a9452002701e23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codefield: {fileID: 1829877493}
+  codebutton: {fileID: 515836775}
 --- !u!4 &1555923625
 Transform:
   m_ObjectHideFlags: 0
