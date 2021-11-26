@@ -8,7 +8,6 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     Vector3 _startPosition;
     Vector3 _offsetToMouse;
     float _zDistanceToCamera;
-    bool first = true;
 
     #region Interface Implementations
 
@@ -28,21 +27,19 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (Input.touchCount > 1)
             return;
 
-        if(first){
-            Debug.Log("first");
-            first=false;
-            GetComponent<Rigidbody2D>().gravityScale = 0.6f;
-        }
+        GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 
         transform.position = Camera.main.ScreenToWorldPoint(
             new Vector3(Input.mousePosition.x, Input.mousePosition.y, _zDistanceToCamera)
             ) + _offsetToMouse;
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         DraggedInstance = null;
         _offsetToMouse = Vector3.zero;
+        GetComponent<Rigidbody2D>().gravityScale = 0.6f;
     }
 
     #endregion
