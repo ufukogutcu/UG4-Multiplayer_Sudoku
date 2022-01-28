@@ -142,3 +142,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 6
+  position: {x: -883, y: -355, z: 0}
+  prefab: {fileID: 6387177915097898915}

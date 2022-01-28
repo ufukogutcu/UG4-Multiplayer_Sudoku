@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public int number;
+    public Vector3 position;
+    public GameObject prefab;
 
     public static GameObject DraggedInstance;
 
@@ -39,6 +41,9 @@ public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         DraggedInstance = null;
         _offsetToMouse = Vector3.zero;
+        GameObject obj = Instantiate(prefab, position, Quaternion.identity);
+        obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        DestroyObject(gameObject);
         
     }
 
