@@ -42,9 +42,7 @@ public class CellData : MonoBehaviour
         {
             current = value;
             
-            Vector3 poss = gameObject.transform.position;
-            poss = pos;
-            GameObject obj = Instantiate(prefab, poss, Quaternion.identity);
+            GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
         }
@@ -55,6 +53,23 @@ public class CellData : MonoBehaviour
                 Destroy(currentobject);
                 current = 0;
             }
+        }
+    }
+
+    public void admin_place(int currvalue, int ansvalue, GameObject prefab)
+    {
+        current = currvalue;
+        answer = ansvalue;
+            
+        if (currvalue == 0)
+        {
+            currentobject = null;
+        }
+        else
+        {
+            GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
+            obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
+            currentobject = obj;
         }
     }
 }

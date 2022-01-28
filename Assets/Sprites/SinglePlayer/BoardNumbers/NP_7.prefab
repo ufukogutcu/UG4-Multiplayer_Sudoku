@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 4782772065622305777}
   - component: {fileID: 4782772065622305779}
   - component: {fileID: 4782772065622305776}
-  - component: {fileID: 613960304584512111}
-  - component: {fileID: 5781023182203315998}
-  - component: {fileID: 4782772065622305783}
   m_Layer: 5
   m_Name: NP_7
   m_TagString: LeftNumbers
@@ -82,65 +79,3 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 7
---- !u!61 &613960304584512111
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4782772065622305782}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.1349239, y: -1.5349627}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 14.168135, y: 18.228462}
-  m_EdgeRadius: 0
---- !u!114 &5781023182203315998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4782772065622305782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f63bf5d5fd19bd40b96e56a068e411e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  number: 7
-  position: {x: -772, y: -355, z: 0}
-  prefab: {fileID: 3623455579743059747, guid: a7d5bd892c65d94468f52385fd0839f9, type: 3}
---- !u!50 &4782772065622305783
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4782772065622305782}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 1
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
