@@ -42,6 +42,7 @@ public class CellData : MonoBehaviour
             
             GameObject obj = Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
+            currentobject = obj;
         }
         else
         {
