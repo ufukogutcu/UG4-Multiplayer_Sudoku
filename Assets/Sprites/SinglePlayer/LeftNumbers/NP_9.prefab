@@ -123,6 +123,7 @@ MonoBehaviour:
   number: 9
   position: {x: -548, y: -355, z: 0}
   prefab: {fileID: 3116479092232989239}
+  summonprefab: {fileID: 5148477719711248072, guid: 7a80c2a8d14f8784388c2c3d80a1d0dc, type: 3}
 --- !u!50 &-7421426046274944461
 Rigidbody2D:
   serializedVersion: 4

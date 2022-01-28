@@ -9,6 +9,9 @@ public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public static GameObject DraggedInstance;
 
+    public GameObject summonprefab;
+    private GameObject lastcoll;
+
     Vector3 _startPosition;
     Vector3 _offsetToMouse;
     float _zDistanceToCamera;
@@ -41,10 +44,27 @@ public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         DraggedInstance = null;
         _offsetToMouse = Vector3.zero;
+
+        if(lastcoll != null)
+        {
+            CellData data = lastcoll.GetComponent("CellData") as CellData;
+            data.place_value(number,summonprefab);
+        }
+
         GameObject obj = Instantiate(prefab, position, Quaternion.identity);
         obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
         DestroyObject(gameObject);
         
+    }
+
+    private void OnCollisionStay2D(Collision2D coll)
+    {
+        lastcoll = coll.gameObject;
+    }
+
+    private void OnCollisionExit2D(Collision2D coll)
+    {
+        lastcoll = null;
     }
 
     #endregion
