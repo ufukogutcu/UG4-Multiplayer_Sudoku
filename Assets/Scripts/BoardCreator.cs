@@ -48,24 +48,76 @@ public class BoardCreator : MonoBehaviour
         return data.answer;
     }
 
+    GameObject prefab(int i)
+    {
+        if (i==1)
+        {
+            return prefab1;
+        }
+        else if (i==2)
+        {
+            return prefab2;
+        }
+        else if (i==3)
+        {
+            return prefab3;
+        }
+        else if (i==4)
+        {
+            return prefab4;
+        }
+        else if (i==5)
+        {
+            return prefab5;
+        }
+        else if (i==6)
+        {
+            return prefab6;
+        }
+        else if (i==7)
+        {
+            return prefab7;
+        }
+        else if (i==8)
+        {
+            return prefab8;
+        }
+        else if (i==9)
+        {
+            return prefab9;
+        }
+        else
+        {
+            return null;
+        }
+
+    }
     
 
-    void generate_board()
+    int[] generate_board()
     {
-        int a = 1;
+        int[] arr = new int[81];
+        for ( int i = 0; i < arr.Length;i++ ) {
+            arr[i] = 1;
+        }
+        return arr;
     }
 
+    void spawn_board()
+    {
+        generate_board();
 
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        spawn_board();
     }
 
     void Update()
     {
-        
+
     }
 
     
