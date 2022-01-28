@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 
 public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public int number;
+
     public static GameObject DraggedInstance;
 
     Vector3 _startPosition;
