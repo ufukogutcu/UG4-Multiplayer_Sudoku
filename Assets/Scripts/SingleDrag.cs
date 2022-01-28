@@ -59,12 +59,14 @@ public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     private void OnCollisionStay2D(Collision2D coll)
     {
-        lastcoll = coll.gameObject;
+        if (coll.gameObject.tag == "Cells")
+            lastcoll = coll.gameObject;
     }
 
     private void OnCollisionExit2D(Collision2D coll)
     {
-        lastcoll = null;
+        if (coll.gameObject.tag == "Cells")
+            lastcoll = null;
     }
 
     #endregion

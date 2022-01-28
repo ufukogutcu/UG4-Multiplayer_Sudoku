@@ -8,6 +8,8 @@ public class CellData : MonoBehaviour
     public int current = 0;
     public int answer = 0;
 
+    public Vector3 pos;
+
     private GameObject currentobject;
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -36,11 +38,13 @@ public class CellData : MonoBehaviour
 
     public void place_value(int value,GameObject prefab)
     {
-        if (current==0)
+        if (current==0 && value!=0)
         {
             current = value;
             
-            GameObject obj = Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
+            Vector3 poss = gameObject.transform.position;
+            poss = pos;
+            GameObject obj = Instantiate(prefab, poss, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
         }

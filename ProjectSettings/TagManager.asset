@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LeftNumbers
+  - Cells
   layers:
   - Default
   - TransparentFX
