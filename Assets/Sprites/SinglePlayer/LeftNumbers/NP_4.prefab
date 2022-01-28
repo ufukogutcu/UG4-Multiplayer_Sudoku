@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 925505088015429928}
   - component: {fileID: 925505088015429931}
   - component: {fileID: 973632249740643770}
-  - component: {fileID: 3631572145808153045}
   - component: {fileID: 4759748897273335169}
+  - component: {fileID: 7459324526596353369}
   m_Layer: 5
   m_Name: NP_4
-  m_TagString: Untagged
+  m_TagString: LeftNumbers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.9258814, y: -0.8888273}
@@ -108,27 +108,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.147776, y: 18.082819}
   m_EdgeRadius: 0
---- !u!50 &3631572145808153045
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925505088015429933}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &4759748897273335169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +123,24 @@ MonoBehaviour:
   number: 4
   position: {x: -548, y: -199, z: 0}
   prefab: {fileID: 925505088015429933}
+--- !u!50 &7459324526596353369
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925505088015429933}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
