@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SingleGameManager : MonoBehaviour{
 
@@ -30,7 +31,7 @@ public class SingleGameManager : MonoBehaviour{
     }
 
     void EndGame(){
-        Debug.Log("end");
+        SceneManager.LoadScene("SingleGameOver");
     }
 
     public void add_strike(){
