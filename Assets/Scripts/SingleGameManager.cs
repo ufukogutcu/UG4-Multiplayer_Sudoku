@@ -18,7 +18,12 @@ public class SingleGameManager : MonoBehaviour{
 
 
     void Start(){
-        starting_time = Time.time;
+        if(SettingsSingle.notimer){
+            Destroy(timer);
+        }
+        else{
+            starting_time = Time.time;
+        }
 
         strike0 = Instantiate(strike0, strike_pos, Quaternion.identity);
         strike0.transform.SetParent(GameObject.Find("Strikes").transform, false);
@@ -29,6 +34,9 @@ public class SingleGameManager : MonoBehaviour{
     }
 
     public void add_strike(){
+        if(SettingsSingle.nostrikes){
+            return;
+        }
         strikes++;
         if (strikes == 1){
             DestroyObject(strike0);
@@ -48,6 +56,9 @@ public class SingleGameManager : MonoBehaviour{
     }
 
     void Update(){
+        if(SettingsSingle.notimer){
+            return;
+        }
         float t = timelimit - (Time.time-starting_time);
         if (t<0.0001){
             EndGame();
