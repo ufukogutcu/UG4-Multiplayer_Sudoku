@@ -12,6 +12,8 @@ public class CellData : MonoBehaviour
 
     private GameObject currentobject;
 
+    public GameObject GameManager;
+    
     void OnCollisionEnter2D(Collision2D col) {
         if (current==0)
         {
@@ -40,11 +42,18 @@ public class CellData : MonoBehaviour
     {
         if (current==0 && value!=0)
         {
-            current = value;
+            if (value==answer){
+                current = value;
             
-            GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
-            obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
-            currentobject = obj;
+                GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
+                obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
+                currentobject = obj;
+            }
+            // If wrong answer
+            else{
+                SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+                manager.add_strike();
+            }
         }
         else
         {
