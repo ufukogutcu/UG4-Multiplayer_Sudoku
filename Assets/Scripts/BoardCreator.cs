@@ -223,22 +223,30 @@ public class BoardCreator : MonoBehaviour
     }
 
     //for board solving
-    bool solve(int[,] board, int row=0, int col=0){
+    bool solve(int[,] board, int[,] forbidden=null, int row=0, int col=0){
 
         if (col == 8 && row == 8){
-            return true;
+            for (int i = 1;i<10;i++){
+                if (placeable(board, row, col, i)){
+                    board[row,col] = i;
+                    if (board!=forbidden){
+                    return true;
+                    }
+                    return false;
+                }
+            }
         }
         if (col == 9) {
             col = 0;
             row++;
         }
         if (board[row,col] != 0){
-            return solve(board, row, (col+1));
+            return solve(board, forbidden, row, (col+1));
         }
         for (int num = 1; num < 10; num++) {
             if (placeable(board, row, col, num)) {
                 board[row,col] = num;
-                if (solve(board, row, (col+1))){
+                if (solve(board, forbidden, row, (col+1))){
                     return true;
                 }
             }
@@ -254,8 +262,34 @@ public class BoardCreator : MonoBehaviour
         return board;
     }
 
+    bool OneSolution(int[,] board){
+        int[,] tmp_board = board;
+        solve(board);
+        return !solve(tmp_board,board); 
+    }
+
+    void remove_random_cells(int[,] board, int n){
+        //DO
+        //Bunu yap ve single menu ye difficulty ekle
+    }
+
     int[,] generate_unsolved_board(int[,] board){
-        return board;
+        int n=8;
+        if(SettingsSingle.difficulty==1)
+            n=6;
+        if(SettingsSingle.difficulty==2)
+            n=10;
+        if(SettingsSingle.difficulty==3)
+            n=14;
+        Debug.Log(n.ToString());
+        int[,] tmp;
+        while(true){
+            tmp = board;
+            remove_random_cells(tmp,n);
+            if(OneSolution(tmp))
+                break;
+        }
+        return tmp;
     }
 
     void spawn_board()
