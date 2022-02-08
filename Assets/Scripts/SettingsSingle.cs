@@ -12,5 +12,5 @@ public class SettingsSingle : MonoBehaviour
     public static int medium_n = 30;
     public static int hard_n = 50;
 
-    public static float timelimit = 120;
+    public static float timelimit = (10) *60;
 }
