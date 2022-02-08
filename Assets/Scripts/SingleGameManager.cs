@@ -13,7 +13,6 @@ public class SingleGameManager : MonoBehaviour{
 
     public Vector3 strike_pos;
 
-    public float timelimit;
     public Text timer;
     private float starting_time;
 
@@ -60,13 +59,16 @@ public class SingleGameManager : MonoBehaviour{
         if(SettingsSingle.notimer){
             return;
         }
-        float t = timelimit - (Time.time-starting_time);
+        float t = SettingsSingle.timelimit - (Time.time-starting_time);
         if (t<0.0001){
             EndGame();
         }
 
         string minutes = ((int) t / 60).ToString();
         string seconds = (t % 60).ToString("f0");
+        if(t % 60<9.5){
+            seconds = "0"+(t % 60).ToString("f0");
+        }
 
         timer.text = minutes+":"+seconds;
     }
