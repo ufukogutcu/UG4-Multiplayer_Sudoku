@@ -16,6 +16,7 @@ public class SingleGameManager : MonoBehaviour{
     public Text timer;
     private float starting_time;
 
+    private int filled_cells=0;
 
     void Start(){
         if(SettingsSingle.notimer){
@@ -31,6 +32,12 @@ public class SingleGameManager : MonoBehaviour{
 
     void EndGame(){
         SceneManager.LoadScene("SingleGameOver");
+    }
+
+    public void FilledOneCell(){
+        filled_cells++;
+        if(filled_cells==81)
+            SceneManager.LoadScene("SingleWon");
     }
 
     public void add_strike(){

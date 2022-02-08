@@ -48,6 +48,8 @@ public class CellData : MonoBehaviour
                 GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
                 obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
                 currentobject = obj;
+                SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+                manager.FilledOneCell();
             }
             // If wrong answer
             else{
@@ -67,7 +69,7 @@ public class CellData : MonoBehaviour
 
     public void admin_place(int currvalue, int ansvalue, GameObject prefab)
     {
-        
+
         current = currvalue;
         answer = ansvalue;
             
@@ -80,6 +82,8 @@ public class CellData : MonoBehaviour
             GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
+            SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+            manager.FilledOneCell();
         }
     }
 }
