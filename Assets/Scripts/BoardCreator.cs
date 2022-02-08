@@ -164,17 +164,105 @@ public class BoardCreator : MonoBehaviour
         }
 
     }
+
+    bool placeable(int[,] board, int row, int col, int num){
+        int row0 = row - (row % 3);
+        int col0 = col - (col % 3);
+
+        for (int i = 0;i < 3;i++){
+            for (int j = 0; j < 3; j++){
+                if (board[(row0+i),(col0+j)] == num){
+                    return false;
+                }
+            }
+        }
+        for (int j = 0;j <= 8;j++){
+            if (board[row,j] == num){
+                return false;
+            }
+        }
+        for (int i = 0;i <= 8;i++){
+            if (board[i,col] == num){
+                return false;
+            }
+        }
+        return true;
+    }
+    //for board generation
+    bool generate(int[,] board, int row=0, int col=0){
+        if (col == 8 && row == 8){
+            for (int i = 1;i<10;i++){
+                if (placeable(board, row, col, i)){
+                    board[row,col] = i;
+                    return true;
+                }
+            }
+        }
+        if (col == 9) {
+            col = 0;
+            row++;
+        }
+        if (board[row,col] != 0){
+            return generate(board, row, (col+1));
+        }
+        int[] numbers = {1,2,3,4,5,6,7,8,9};
+        List<int> unused = new List<int>(numbers);
+        for (int i = 1; i < 10; i++) {
+            int randomindex = Random.Range(0,unused.Count);
+            int num = unused[randomindex];
+            unused.RemoveAt(randomindex);
+            if (placeable(board, row, col, num)) {
+                board[row,col] = num;
+                if (generate(board, row, (col+1))){
+                    return true;
+                }
+            }
+            board[row,col] = 0;
+        }
+        return false;
+    }
+
+    //for board solving
+    bool solve(int[,] board, int row=0, int col=0){
+
+        if (col == 8 && row == 8){
+            return true;
+        }
+        if (col == 9) {
+            col = 0;
+            row++;
+        }
+        if (board[row,col] != 0){
+            return solve(board, row, (col+1));
+        }
+        for (int num = 1; num < 10; num++) {
+            if (placeable(board, row, col, num)) {
+                board[row,col] = num;
+                if (solve(board, row, (col+1))){
+                    return true;
+                }
+            }
+            board[row,col] = 0;
+        }
+        return false;
+    }
     
     int[,] generate_board()
     {
-        int[,] boardd = {{6, 2, 5, 8, 4, 3, 7, 9, 1},{7, 9, 1, 2, 6, 5, 4, 8, 3},{4, 8, 3, 9, 7, 1, 6, 2, 5},{8, 1, 4, 5, 9, 7, 2, 3, 6},{2, 3, 6, 1, 8, 4, 9, 5, 7},{9, 5, 7, 3, 2, 6, 8, 1, 4},{5, 6, 9, 4, 3, 2, 1, 7, 8},{3, 4, 2, 7, 1, 8, 5, 6, 9},{1, 7, 8, 6, 5, 9, 3, 4, 2}};
-        return boardd;
+        int[,] board = new int[9,9];
+        generate(board);
+        return board;
+    }
+
+    int[,] generate_unsolved_board(int[,] board){
+        return board;
     }
 
     void spawn_board()
     {
         int[,] board = generate_board();
         int[,] solution_board = board;
+        board = generate_unsolved_board(board);
         GameObject[,] cells = {{cell0_0,cell0_1,cell0_2,cell0_3,cell0_4,cell0_5,cell0_6,cell0_7,cell0_8},{cell1_0,cell1_1,cell1_2,cell1_3,cell1_4,cell1_5,cell1_6,cell1_7,cell1_8},{cell2_0,cell2_1,cell2_2,cell2_3,cell2_4,cell2_5,cell2_6,cell2_7,cell2_8},{cell3_0,cell3_1,cell3_2,cell3_3,cell3_4,cell3_5,cell3_6,cell3_7,cell3_8},{cell4_0,cell4_1,cell4_2,cell4_3,cell4_4,cell4_5,cell4_6,cell4_7,cell4_8},{cell5_0,cell5_1,cell5_2,cell5_3,cell5_4,cell5_5,cell5_6,cell5_7,cell5_8},{cell6_0,cell6_1,cell6_2,cell6_3,cell6_4,cell6_5,cell6_6,cell6_7,cell6_8},{cell7_0,cell7_1,cell7_2,cell7_3,cell7_4,cell7_5,cell7_6,cell7_7,cell7_8},{cell8_0,cell8_1,cell8_2,cell8_3,cell8_4,cell8_5,cell8_6,cell8_7,cell8_8}}; 
         for (int i = 0; i < 9;i++) {
             for (int j = 0; j < 9;j++){
