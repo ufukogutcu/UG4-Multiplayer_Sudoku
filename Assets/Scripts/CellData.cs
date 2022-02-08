@@ -67,6 +67,7 @@ public class CellData : MonoBehaviour
 
     public void admin_place(int currvalue, int ansvalue, GameObject prefab)
     {
+        
         current = currvalue;
         answer = ansvalue;
             
