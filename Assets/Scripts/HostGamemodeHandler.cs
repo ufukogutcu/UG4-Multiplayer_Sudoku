@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 
-public class HostGamemodeHandler : MonoBehaviour
+public class HostGamemodeHandler : MonoBehaviourPunCallbacks
 {
     public Toggle gamemode1;
     public Toggle gamemode2;

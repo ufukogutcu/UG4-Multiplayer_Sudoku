@@ -49,7 +49,7 @@ public class HostNetworkManager : MonoBehaviourPunCallbacks
     private Text waiting_for_players;
 
     public Text joined_players_prefab;
-    private Vector3 joined_players_pos = new Vector3(1,1,1);
+    private Vector3 joined_players_pos = new Vector3((float) -36.05,(float) 60,1);
     private Text joined_players;
     
     public GameObject start_panel_prefab;
@@ -69,7 +69,7 @@ public class HostNetworkManager : MonoBehaviourPunCallbacks
         Destroy(waiting_for_players);
         joined_players = Instantiate(joined_players_prefab, joined_players_pos, Quaternion.identity) as Text;
         joined_players.transform.SetParent(GameObject.Find("Canvas").transform, false);
-        joined_players.text = playername + " is ready to play";
+        joined_players.text = playername + " joined";
 
         start_panel = Instantiate(start_panel_prefab, start_panel_pos, Quaternion.identity);
         start_panel.transform.SetParent(GameObject.Find("Canvas").transform, false);
