@@ -893,7 +893,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1073,6 +1073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creation: {fileID: 1687591600}
+  waiting_for_players_prefab: {fileID: 3524313753338160487, guid: 6fc486217f2e13c4ab9080228acdb5df, type: 3}
+  joined_players_prefab: {fileID: 5397084815895530227, guid: 1b84d6f4288b1f94a9ced9b376d1c5aa, type: 3}
+  start_panel_prefab: {fileID: 4402940768644425311, guid: a6010dbdf92f5b14d8b593d2b7c9f2ce, type: 3}
 --- !u!4 &1555923625
 Transform:
   m_ObjectHideFlags: 0
