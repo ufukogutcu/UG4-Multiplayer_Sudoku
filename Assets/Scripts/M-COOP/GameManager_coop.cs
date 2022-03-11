@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class GameManager_coop : MonoBehaviour{
 
@@ -26,7 +27,7 @@ public class GameManager_coop : MonoBehaviour{
             starting_time = Time.time;
         }
 
-        strike0 = Instantiate(strike0, strike_pos, Quaternion.identity);
+        strike0 = PhotonNetwork.Instantiate(strike0.name, strike_pos, Quaternion.identity);
         strike0.transform.SetParent(GameObject.Find("Strikes").transform, false);
     }
 

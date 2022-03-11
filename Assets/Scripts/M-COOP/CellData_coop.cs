@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class CellData_coop : MonoBehaviour
+public class CellData_coop : MonoBehaviourPunCallbacks
 {
     public int current = 0;
     public int answer = 0;
@@ -12,7 +13,11 @@ public class CellData_coop : MonoBehaviour
 
     private GameObject currentobject;
 
-    public GameObject GameManager;
+    private GameObject GameManager;
+
+    void Start(){
+        GameObject GameManager = GameObject.Find("GameManager") as GameObject;
+    }
     
     void OnCollisionEnter2D(Collision2D col) {
         if (current==0)
@@ -45,7 +50,7 @@ public class CellData_coop : MonoBehaviour
             if (value==answer){
                 current = value;
             
-                GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
+                GameObject obj = PhotonNetwork.Instantiate(prefab.name, pos, Quaternion.identity);
                 obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
                 currentobject = obj;
                 GameManager_coop manager = GameManager.GetComponent("GameManager_coop") as GameManager_coop;
@@ -79,7 +84,7 @@ public class CellData_coop : MonoBehaviour
         }
         else
         {
-            GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
+            GameObject obj = PhotonNetwork.Instantiate(prefab.name, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
             GameManager_coop manager = GameManager.GetComponent("GameManager_coop") as GameManager_coop;
