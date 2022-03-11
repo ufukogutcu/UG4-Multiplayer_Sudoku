@@ -19,7 +19,7 @@ public class GameManager_coop : MonoBehaviour{
     private int filled_cells=0;
 
     void Start(){
-        if(SettingsSingle.notimer){
+        if(Settings_coop.notimer){
             Destroy(timer);
         }
         else{
@@ -41,7 +41,7 @@ public class GameManager_coop : MonoBehaviour{
     }
 
     public void add_strike(){
-        if(SettingsSingle.nostrikes){
+        if(Settings_coop.nostrikes){
             return;
         }
         strikes++;
@@ -63,10 +63,10 @@ public class GameManager_coop : MonoBehaviour{
     }
 
     void Update(){
-        if(SettingsSingle.notimer){
+        if(Settings_coop.notimer){
             return;
         }
-        float t = SettingsSingle.timelimit - (Time.time-starting_time);
+        float t = Settings_coop.timelimit - (Time.time-starting_time);
         if (t<0.0001){
             EndGame();
         }

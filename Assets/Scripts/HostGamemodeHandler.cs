@@ -12,7 +12,10 @@ public class HostGamemodeHandler : MonoBehaviourPunCallbacks
 
     public void submit(){
         if (gamemode1.isOn)
-        {PhotonNetwork.LoadLevel("MULTI-COOP");}
+        {
+            PhotonNetwork.AutomaticallySyncScene = true;
+            PhotonNetwork.LoadLevel("MULTI-COOP");
+        }
         if (gamemode2.isOn)
         {}
         if (gamemode3.isOn)

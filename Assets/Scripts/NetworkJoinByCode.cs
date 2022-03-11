@@ -10,6 +10,7 @@ public class NetworkJoinByCode : MonoBehaviourPunCallbacks
     
     public void JoinRoomByCode(InputField code){
         
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.JoinRoom(code.text);
 
     }

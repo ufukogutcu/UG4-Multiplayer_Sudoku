@@ -25,6 +25,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void FindRandomRoom()
     {
 
+      PhotonNetwork.AutomaticallySyncScene = true;
       PhotonNetwork.JoinRandomRoom();
   
     }

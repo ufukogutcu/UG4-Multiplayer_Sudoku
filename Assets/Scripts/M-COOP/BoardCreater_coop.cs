@@ -282,13 +282,13 @@ public class BoardCreater_coop : MonoBehaviour
     }
 
     int[,] generate_unsolved_board(int[,] board){
-        int n=SettingsSingle.default_n;
-        if(SettingsSingle.difficulty==1)
-            n=SettingsSingle.easy_n;
-        if(SettingsSingle.difficulty==2)
-            n=SettingsSingle.medium_n;
-        if(SettingsSingle.difficulty==3)
-            n=SettingsSingle.hard_n;
+        int n=Settings_coop.default_n;
+        if(Settings_coop.difficulty==1)
+            n=Settings_coop.easy_n;
+        if(Settings_coop.difficulty==2)
+            n=Settings_coop.medium_n;
+        if(Settings_coop.difficulty==3)
+            n=Settings_coop.hard_n;
 
         int[,] tmp;
         while(true){
