@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CellData : MonoBehaviour
+public class CellData_vs : MonoBehaviour
 {
     public int current = 0;
     public int answer = 0;
@@ -23,7 +23,7 @@ public class CellData : MonoBehaviour
         else
         {
             if (col.gameObject.tag == "LeftNumbers"){
-                SingleDrag drag = col.gameObject.GetComponent("SingleDrag") as SingleDrag;
+                Drag_vs drag = col.gameObject.GetComponent("Drag_vs") as Drag_vs;
                 if (drag.number == 0)
                 {
                     gameObject.GetComponent<Image>().color = new Color32(82,82,62,103);
@@ -48,12 +48,12 @@ public class CellData : MonoBehaviour
                 GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
                 obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
                 currentobject = obj;
-                SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+                GameManager_vs manager = GameManager.GetComponent("GameManager_vs") as GameManager_vs;
                 manager.FilledOneCell();
             }
             // If wrong answer
             else{
-                SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+                GameManager_vs manager = GameManager.GetComponent("GameManager_vs") as GameManager_vs;
                 manager.add_strike();
             }
         }
@@ -82,7 +82,7 @@ public class CellData : MonoBehaviour
             GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
-            SingleGameManager manager = GameManager.GetComponent("SingleGameManager") as SingleGameManager;
+            GameManager_vs manager = GameManager.GetComponent("GameManager_vs") as GameManager_vs;
             manager.FilledOneCell();
         }
     }

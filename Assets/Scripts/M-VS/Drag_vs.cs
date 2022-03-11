@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Drag_vs : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public int number;
     public Vector3 position;
@@ -47,7 +47,7 @@ public class SingleDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
         if(lastcoll != null)
         {
-            CellData data = lastcoll.GetComponent("CellData") as CellData;
+            CellData_vs data = lastcoll.GetComponent("CellData_vs") as CellData_vs;
             data.place_value(number,summonprefab);
         }
 

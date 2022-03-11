@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class SettingsSingle : MonoBehaviour
+public class Settings_sabotage : MonoBehaviour
 {
     public static bool notimer;
     public static bool nostrikes;
     public static int difficulty;
 
-    public static int default_n = 4;
+    public static int default_n = 20;
     public static int easy_n = 18;
     public static int medium_n = 30;
     public static int hard_n = 50;

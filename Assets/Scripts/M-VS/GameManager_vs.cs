@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SingleGameManager : MonoBehaviour{
+public class GameManager_vs : MonoBehaviour{
 
     private int strikes = 0;
     public GameObject strike0;
@@ -19,7 +19,7 @@ public class SingleGameManager : MonoBehaviour{
     private int filled_cells=0;
 
     void Start(){
-        if(SettingsSingle.notimer){
+        if(Settings_vs.notimer){
             Destroy(timer);
         }
         else{
@@ -41,7 +41,7 @@ public class SingleGameManager : MonoBehaviour{
     }
 
     public void add_strike(){
-        if(SettingsSingle.nostrikes){
+        if(Settings_vs.nostrikes){
             return;
         }
         strikes++;
@@ -63,10 +63,10 @@ public class SingleGameManager : MonoBehaviour{
     }
 
     void Update(){
-        if(SettingsSingle.notimer){
+        if(Settings_vs.notimer){
             return;
         }
-        float t = SettingsSingle.timelimit - (Time.time-starting_time);
+        float t = Settings_vs.timelimit - (Time.time-starting_time);
         if (t<0.0001){
             EndGame();
         }

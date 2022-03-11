@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoardCreator : MonoBehaviour
+public class BoardCreator_vs : MonoBehaviour
 {
     public GameObject prefab1;
     public GameObject prefab2;
@@ -98,25 +98,25 @@ public class BoardCreator : MonoBehaviour
 
     void set_current(GameObject cell, int current)
     {
-        CellData data = cell.GetComponent("CellData") as CellData;
+        CellData_vs data = cell.GetComponent("CellData_vs") as CellData_vs;
         data.current = current;
     }
 
     void set_answer(GameObject cell, int answer)
     {
-        CellData data = cell.GetComponent("CellData") as CellData;
+        CellData_vs data = cell.GetComponent("CellData_vs") as CellData_vs;
         data.answer = answer;
     }
 
     int get_current(GameObject cell)
     {
-        CellData data = cell.GetComponent("CellData") as CellData;
+        CellData_vs data = cell.GetComponent("CellData_vs") as CellData_vs;
         return data.current;
     }
 
     int get_answer(GameObject cell)
     {
-        CellData data = cell.GetComponent("CellData") as CellData;
+        CellData_vs data = cell.GetComponent("CellData_vs") as CellData_vs;
         return data.answer;
     }
 
@@ -282,13 +282,13 @@ public class BoardCreator : MonoBehaviour
     }
 
     int[,] generate_unsolved_board(int[,] board){
-        int n=SettingsSingle.default_n;
-        if(SettingsSingle.difficulty==1)
-            n=SettingsSingle.easy_n;
-        if(SettingsSingle.difficulty==2)
-            n=SettingsSingle.medium_n;
-        if(SettingsSingle.difficulty==3)
-            n=SettingsSingle.hard_n;
+        int n=Settings_vs.default_n;
+        if(Settings_vs.difficulty==1)
+            n=Settings_vs.easy_n;
+        if(Settings_vs.difficulty==2)
+            n=Settings_vs.medium_n;
+        if(Settings_vs.difficulty==3)
+            n=Settings_vs.hard_n;
 
         int[,] tmp;
         while(true){
@@ -324,7 +324,7 @@ public class BoardCreator : MonoBehaviour
         GameObject[,] cells = {{cell0_0,cell0_1,cell0_2,cell0_3,cell0_4,cell0_5,cell0_6,cell0_7,cell0_8},{cell1_0,cell1_1,cell1_2,cell1_3,cell1_4,cell1_5,cell1_6,cell1_7,cell1_8},{cell2_0,cell2_1,cell2_2,cell2_3,cell2_4,cell2_5,cell2_6,cell2_7,cell2_8},{cell3_0,cell3_1,cell3_2,cell3_3,cell3_4,cell3_5,cell3_6,cell3_7,cell3_8},{cell4_0,cell4_1,cell4_2,cell4_3,cell4_4,cell4_5,cell4_6,cell4_7,cell4_8},{cell5_0,cell5_1,cell5_2,cell5_3,cell5_4,cell5_5,cell5_6,cell5_7,cell5_8},{cell6_0,cell6_1,cell6_2,cell6_3,cell6_4,cell6_5,cell6_6,cell6_7,cell6_8},{cell7_0,cell7_1,cell7_2,cell7_3,cell7_4,cell7_5,cell7_6,cell7_7,cell7_8},{cell8_0,cell8_1,cell8_2,cell8_3,cell8_4,cell8_5,cell8_6,cell8_7,cell8_8}}; 
         for (int i = 0; i < 9;i++) {
             for (int j = 0; j < 9;j++){
-            CellData data = cells[i,j].GetComponent("CellData") as CellData;
+            CellData_vs data = cells[i,j].GetComponent("CellData_vs") as CellData_vs;
             data.admin_place(board[i,j],solution_board[i,j],prefab(board[i,j]));
             }
         }
