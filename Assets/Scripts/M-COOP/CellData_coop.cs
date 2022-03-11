@@ -14,10 +14,6 @@ public class CellData_coop : MonoBehaviourPunCallbacks
     private GameObject currentobject;
 
     private GameObject GameManager;
-
-    void Start(){
-        GameObject GameManager = GameObject.Find("GameManager") as GameObject;
-    }
     
     void OnCollisionEnter2D(Collision2D col) {
         if (current==0)
@@ -84,6 +80,7 @@ public class CellData_coop : MonoBehaviourPunCallbacks
         }
         else
         {
+            GameManager = GameObject.Find("GameManager") as GameObject;
             GameObject obj = PhotonNetwork.Instantiate(prefab.name, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
