@@ -233,7 +233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium
+  m_Text: VS
 --- !u!1 &4402940768373695001
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6566632, y: -2.0168786}
+  m_AnchoredPosition: {x: -2.38, y: -2.0168786}
   m_SizeDelta: {x: 130.61429, y: 82.39602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4402940768641467175
@@ -417,9 +417,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4402940768644425311}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70.919624, y: 51.822876, z: -4542.82}
-  m_LocalScale: {x: 108, y: 108, z: 108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40, y: 1, z: 1}
+  m_LocalScale: {x: 129, y: 113.5, z: 1}
   m_Children:
   - {fileID: 4402940770109536534}
   - {fileID: 4402940768641467174}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 4402940768719973181}
   - component: {fileID: 4402940768719973178}
   m_Layer: 5
-  m_Name: ' Gamemode 3'
+  m_Name: ' Gamemode 3-VS(sabotage)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4402814, y: -2.0168786}
+  m_AnchoredPosition: {x: 0.91, y: -2.0168786}
   m_SizeDelta: {x: 130.61429, y: 82.39602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4402940768719973178
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 4402940769773642698}
   - component: {fileID: 4402940769773642701}
   m_Layer: 5
-  m_Name: Gamemode 2
+  m_Name: Gamemode 2-VS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,7 +987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.758515, y: -2.0168786}
+  m_AnchoredPosition: {x: -0.41, y: -2.0168786}
   m_SizeDelta: {x: 130.61429, y: 82.39602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4402940769773642698
@@ -1159,8 +1159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: -0.5}
-  m_SizeDelta: {x: -28, y: -3}
+  m_AnchoredPosition: {x: 121, y: -15.8}
+  m_SizeDelta: {x: 195.9412, y: 27.678543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4402940769869146306
 CanvasRenderer:
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hard
+  m_Text: VS(Sabotage)
 --- !u!1 &4402940769945312421
 GameObject:
   m_ObjectHideFlags: 0

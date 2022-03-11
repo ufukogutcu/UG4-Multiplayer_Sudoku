@@ -119,7 +119,6 @@ MonoBehaviour:
   current: 0
   answer: 0
   pos: {x: 13.3, y: 453, z: 0}
-  GameManager: {fileID: 0}
 --- !u!114 &1410301696381825732
 MonoBehaviour:
   m_ObjectHideFlags: 0

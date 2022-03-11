@@ -17,8 +17,14 @@ public class HostGamemodeHandler : MonoBehaviourPunCallbacks
             PhotonNetwork.LoadLevel("MULTI-COOP");
         }
         if (gamemode2.isOn)
-        {}
+        {
+            PhotonNetwork.AutomaticallySyncScene = true;
+            PhotonNetwork.LoadLevel("MULTI-VS");
+        }
         if (gamemode3.isOn)
-        {}
+        {
+            PhotonNetwork.AutomaticallySyncScene = true;
+            PhotonNetwork.LoadLevel("MULTI-SABOTAGE");
+        }
     }
 }
