@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 1896206}
   - component: {fileID: 1896210}
   - component: {fileID: 1896209}
-  - component: {fileID: 1896208}
   - component: {fileID: 1896207}
+  - component: {fileID: 1896208}
   m_Layer: 5
   m_Name: Cell0_8
   m_TagString: Cells
@@ -197,13 +197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 789.9, y: 441.5, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1896209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,8 +251,8 @@ GameObject:
   - component: {fileID: 23531530}
   - component: {fileID: 23531534}
   - component: {fileID: 23531533}
-  - component: {fileID: 23531532}
   - component: {fileID: 23531531}
+  - component: {fileID: 23531532}
   m_Layer: 5
   m_Name: Cell1_2
   m_TagString: Cells
@@ -316,13 +314,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 23531529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 11.3, y: 344.4, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &23531533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,13 +452,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8052084161189196408, guid: d318da5e05013ab489545ad787128efb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d318da5e05013ab489545ad787128efb, type: 3}
 --- !u!224 &30470767 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3529565725142743932, guid: d318da5e05013ab489545ad787128efb, type: 3}
   m_PrefabInstance: {fileID: 30470766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &30470768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3529565725142743931, guid: d318da5e05013ab489545ad787128efb, type: 3}
+  m_PrefabInstance: {fileID: 30470766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &30470769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30470768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 8
+  position: {x: -663, y: -355, z: 0}
+  prefab: {fileID: 30470768}
+  summonprefab: {fileID: 5194572665308670264, guid: 1859cc490e9edce42a6efa21c7cf7cbf, type: 3}
 --- !u!1 &80663597
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,8 +492,8 @@ GameObject:
   - component: {fileID: 80663598}
   - component: {fileID: 80663602}
   - component: {fileID: 80663601}
-  - component: {fileID: 80663600}
   - component: {fileID: 80663599}
+  - component: {fileID: 80663600}
   m_Layer: 5
   m_Name: Cell6_4
   m_TagString: Cells
@@ -537,13 +555,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 80663597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 274, y: -206, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &80663601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,8 +609,8 @@ GameObject:
   - component: {fileID: 85697182}
   - component: {fileID: 85697186}
   - component: {fileID: 85697185}
-  - component: {fileID: 85697184}
   - component: {fileID: 85697183}
+  - component: {fileID: 85697184}
   m_Layer: 5
   m_Name: Cell0_1
   m_TagString: Cells
@@ -656,13 +672,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 85697181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -114, y: 457, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &85697185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,8 +726,8 @@ GameObject:
   - component: {fileID: 102426006}
   - component: {fileID: 102426010}
   - component: {fileID: 102426009}
-  - component: {fileID: 102426008}
   - component: {fileID: 102426007}
+  - component: {fileID: 102426008}
   m_Layer: 5
   m_Name: Cell7_3
   m_TagString: Cells
@@ -775,13 +789,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 102426005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 140, y: -321, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &102426009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,8 +843,8 @@ GameObject:
   - component: {fileID: 142664621}
   - component: {fileID: 142664625}
   - component: {fileID: 142664624}
-  - component: {fileID: 142664623}
   - component: {fileID: 142664622}
+  - component: {fileID: 142664623}
   m_Layer: 5
   m_Name: Cell1_0
   m_TagString: Cells
@@ -894,13 +906,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 142664620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -243, y: 347, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &142664624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,8 +1035,8 @@ GameObject:
   - component: {fileID: 246126905}
   - component: {fileID: 246126909}
   - component: {fileID: 246126908}
-  - component: {fileID: 246126907}
   - component: {fileID: 246126906}
+  - component: {fileID: 246126907}
   m_Layer: 5
   m_Name: Cell7_8
   m_TagString: Cells
@@ -1088,13 +1098,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 246126904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 812, y: -329, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &246126908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,8 +1152,8 @@ GameObject:
   - component: {fileID: 273184141}
   - component: {fileID: 273184145}
   - component: {fileID: 273184144}
-  - component: {fileID: 273184143}
   - component: {fileID: 273184142}
+  - component: {fileID: 273184143}
   m_Layer: 5
   m_Name: Cell6_7
   m_TagString: Cells
@@ -1207,13 +1215,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 273184140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 675, y: -216, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &273184144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,13 +1353,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: NP_4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4759748897273335169, guid: b582ca13a79a6184ca79a4b2cf97c832, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b582ca13a79a6184ca79a4b2cf97c832, type: 3}
 --- !u!224 &276277507 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 925505088015429930, guid: b582ca13a79a6184ca79a4b2cf97c832, type: 3}
   m_PrefabInstance: {fileID: 276277506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &276277508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 925505088015429933, guid: b582ca13a79a6184ca79a4b2cf97c832, type: 3}
+  m_PrefabInstance: {fileID: 276277506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &276277509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276277508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 4
+  position: {x: -548, y: -199, z: 0}
+  prefab: {fileID: 276277508}
+  summonprefab: {fileID: 6141338377647147270, guid: bef3dafa8d77eca49958ed6501b7303d, type: 3}
 --- !u!1 &277509083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,8 +1393,8 @@ GameObject:
   - component: {fileID: 277509084}
   - component: {fileID: 277509088}
   - component: {fileID: 277509087}
-  - component: {fileID: 277509086}
   - component: {fileID: 277509085}
+  - component: {fileID: 277509086}
   m_Layer: 5
   m_Name: Cell0_2
   m_TagString: Cells
@@ -1428,13 +1456,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 277509083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 13.3, y: 453, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &277509087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,7 +1525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 286030075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e90a3122c483244882508860784195, type: 3}
+  m_Script: {fileID: 11500000, guid: 52b30e36462280547af0b8e81d197e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   strike0: {fileID: 3223826989685700720, guid: 0ca5a67b233cd674a98764c5f10a4041, type: 3}
@@ -1620,13 +1646,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7634096860957501985, guid: 94ad8dbbf427fe445960f41bacdc334d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 94ad8dbbf427fe445960f41bacdc334d, type: 3}
 --- !u!224 &304820554 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5358283949279956230, guid: 94ad8dbbf427fe445960f41bacdc334d, type: 3}
   m_PrefabInstance: {fileID: 304820553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &304820555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358283949279956225, guid: 94ad8dbbf427fe445960f41bacdc334d, type: 3}
+  m_PrefabInstance: {fileID: 304820553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &304820556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304820555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 1
+  position: {x: -883, y: -199, z: 0}
+  prefab: {fileID: 304820555}
+  summonprefab: {fileID: 6917472061789551621, guid: 0187f5649ee25e949b43033346c9b77d, type: 3}
 --- !u!1 &309575201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,8 +1686,8 @@ GameObject:
   - component: {fileID: 309575202}
   - component: {fileID: 309575206}
   - component: {fileID: 309575205}
-  - component: {fileID: 309575204}
   - component: {fileID: 309575203}
+  - component: {fileID: 309575204}
   m_Layer: 5
   m_Name: Cell3_8
   m_TagString: Cells
@@ -1701,13 +1749,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 309575201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 798, y: 124, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &309575205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,8 +1803,8 @@ GameObject:
   - component: {fileID: 320759172}
   - component: {fileID: 320759176}
   - component: {fileID: 320759175}
-  - component: {fileID: 320759174}
   - component: {fileID: 320759173}
+  - component: {fileID: 320759174}
   m_Layer: 5
   m_Name: Cell1_5
   m_TagString: Cells
@@ -1820,13 +1866,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 320759171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 402.7, y: 338, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &320759175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1876,8 +1920,8 @@ GameObject:
   - component: {fileID: 330516152}
   - component: {fileID: 330516156}
   - component: {fileID: 330516155}
-  - component: {fileID: 330516154}
   - component: {fileID: 330516153}
+  - component: {fileID: 330516154}
   m_Layer: 5
   m_Name: Cell0_0
   m_TagString: Cells
@@ -1939,13 +1983,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 330516151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -245, y: 460.2, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &330516155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,8 +2037,8 @@ GameObject:
   - component: {fileID: 335077783}
   - component: {fileID: 335077787}
   - component: {fileID: 335077786}
-  - component: {fileID: 335077785}
   - component: {fileID: 335077784}
+  - component: {fileID: 335077785}
   m_Layer: 5
   m_Name: Cell1_6
   m_TagString: Cells
@@ -2058,13 +2100,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 335077782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 537.7, y: 338.3, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &335077786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,7 +2192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2529158865448731127, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2529158865448731127, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2206,13 +2246,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6446527011787892599, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
 --- !u!224 &336420230 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2529158865448731127, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
   m_PrefabInstance: {fileID: 336420229}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &336420231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2529158865448731120, guid: 35f27f8e0701a2248a547365ce86a60f, type: 3}
+  m_PrefabInstance: {fileID: 336420229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &336420232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336420231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 0
+  position: {x: -428, y: -355, z: 0}
+  prefab: {fileID: 336420231}
+  summonprefab: {fileID: 4143139199152616409, guid: 6dc3d2f85fd96464498aa43ff25530b4, type: 3}
 --- !u!1 &362239016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,8 +2286,8 @@ GameObject:
   - component: {fileID: 362239017}
   - component: {fileID: 362239021}
   - component: {fileID: 362239020}
-  - component: {fileID: 362239019}
   - component: {fileID: 362239018}
+  - component: {fileID: 362239019}
   m_Layer: 5
   m_Name: Cell7_7
   m_TagString: Cells
@@ -2287,13 +2349,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 362239016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 677, y: -325, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &362239020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2427,13 +2487,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 119596091241344755, guid: eae94c58a2b6e964faee24e9f2da0666, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eae94c58a2b6e964faee24e9f2da0666, type: 3}
 --- !u!224 &364952269 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6387177915097898916, guid: eae94c58a2b6e964faee24e9f2da0666, type: 3}
   m_PrefabInstance: {fileID: 364952268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &364952270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6387177915097898915, guid: eae94c58a2b6e964faee24e9f2da0666, type: 3}
+  m_PrefabInstance: {fileID: 364952268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364952271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364952270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 6
+  position: {x: -883, y: -355, z: 0}
+  prefab: {fileID: 364952270}
+  summonprefab: {fileID: 8998297462205926899, guid: e12398918f0dd2c46beeb273136caae6, type: 3}
 --- !u!1 &373242604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,8 +2527,8 @@ GameObject:
   - component: {fileID: 373242605}
   - component: {fileID: 373242609}
   - component: {fileID: 373242608}
-  - component: {fileID: 373242607}
   - component: {fileID: 373242606}
+  - component: {fileID: 373242607}
   m_Layer: 5
   m_Name: Cell6_8
   m_TagString: Cells
@@ -2508,13 +2590,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 373242604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 805, y: -212, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &373242608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,8 +2644,8 @@ GameObject:
   - component: {fileID: 389250109}
   - component: {fileID: 389250113}
   - component: {fileID: 389250112}
-  - component: {fileID: 389250111}
   - component: {fileID: 389250110}
+  - component: {fileID: 389250111}
   m_Layer: 5
   m_Name: Cell4_7
   m_TagString: Cells
@@ -2627,13 +2707,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 389250108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 670.43, y: 13.248, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &389250112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,8 +2761,8 @@ GameObject:
   - component: {fileID: 391003571}
   - component: {fileID: 391003575}
   - component: {fileID: 391003574}
-  - component: {fileID: 391003573}
   - component: {fileID: 391003572}
+  - component: {fileID: 391003573}
   m_Layer: 5
   m_Name: Cell4_8
   m_TagString: Cells
@@ -2746,13 +2824,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 391003570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 801.79, y: 13.248, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &391003574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,13 +2962,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2318396721365726155, guid: a7d5bd892c65d94468f52385fd0839f9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a7d5bd892c65d94468f52385fd0839f9, type: 3}
 --- !u!224 &394604055 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3623455579743059748, guid: a7d5bd892c65d94468f52385fd0839f9, type: 3}
   m_PrefabInstance: {fileID: 394604054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &394604056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3623455579743059747, guid: a7d5bd892c65d94468f52385fd0839f9, type: 3}
+  m_PrefabInstance: {fileID: 394604054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &394604057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394604056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 7
+  position: {x: -772, y: -355, z: 0}
+  prefab: {fileID: 394604056}
+  summonprefab: {fileID: 4782772065622305782, guid: 14d6695f3cb62ae4ea4e8b6cb918f3a1, type: 3}
 --- !u!1 &437062965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,8 +3002,8 @@ GameObject:
   - component: {fileID: 437062966}
   - component: {fileID: 437062970}
   - component: {fileID: 437062969}
-  - component: {fileID: 437062968}
   - component: {fileID: 437062967}
+  - component: {fileID: 437062968}
   m_Layer: 5
   m_Name: Cell5_6
   m_TagString: Cells
@@ -2967,13 +3065,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 437062965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 542.02, y: -95.15, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &437062969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3023,8 +3119,8 @@ GameObject:
   - component: {fileID: 476379869}
   - component: {fileID: 476379873}
   - component: {fileID: 476379872}
-  - component: {fileID: 476379871}
   - component: {fileID: 476379870}
+  - component: {fileID: 476379871}
   m_Layer: 5
   m_Name: Cell8_0
   m_TagString: Cells
@@ -3086,13 +3182,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 476379868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -264, y: -431, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &476379872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,8 +3236,8 @@ GameObject:
   - component: {fileID: 502646780}
   - component: {fileID: 502646784}
   - component: {fileID: 502646783}
-  - component: {fileID: 502646782}
   - component: {fileID: 502646781}
+  - component: {fileID: 502646782}
   m_Layer: 5
   m_Name: Cell8_7
   m_TagString: Cells
@@ -3205,13 +3299,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 502646779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 687, y: -439, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &502646783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3261,8 +3353,8 @@ GameObject:
   - component: {fileID: 527023302}
   - component: {fileID: 527023306}
   - component: {fileID: 527023305}
-  - component: {fileID: 527023304}
   - component: {fileID: 527023303}
+  - component: {fileID: 527023304}
   m_Layer: 5
   m_Name: Cell4_3
   m_TagString: Cells
@@ -3324,13 +3416,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 527023301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 143.26, y: 16.448, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &527023305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3501,8 +3591,8 @@ GameObject:
   - component: {fileID: 613375320}
   - component: {fileID: 613375324}
   - component: {fileID: 613375323}
-  - component: {fileID: 613375322}
   - component: {fileID: 613375321}
+  - component: {fileID: 613375322}
   m_Layer: 5
   m_Name: Cell2_4
   m_TagString: Cells
@@ -3564,13 +3654,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 613375319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 274, y: 235, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &613375323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3620,8 +3708,8 @@ GameObject:
   - component: {fileID: 616219776}
   - component: {fileID: 616219780}
   - component: {fileID: 616219779}
-  - component: {fileID: 616219778}
   - component: {fileID: 616219777}
+  - component: {fileID: 616219778}
   m_Layer: 5
   m_Name: Cell8_6
   m_TagString: Cells
@@ -3683,13 +3771,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 616219775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 552, y: -439, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &616219779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3739,8 +3825,8 @@ GameObject:
   - component: {fileID: 674154706}
   - component: {fileID: 674154710}
   - component: {fileID: 674154709}
-  - component: {fileID: 674154708}
   - component: {fileID: 674154707}
+  - component: {fileID: 674154708}
   m_Layer: 5
   m_Name: Cell4_0
   m_TagString: Cells
@@ -3802,13 +3888,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 674154705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -249, y: 18, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &674154709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3858,8 +3942,8 @@ GameObject:
   - component: {fileID: 682400152}
   - component: {fileID: 682400156}
   - component: {fileID: 682400155}
-  - component: {fileID: 682400154}
   - component: {fileID: 682400153}
+  - component: {fileID: 682400154}
   m_Layer: 5
   m_Name: Cell8_4
   m_TagString: Cells
@@ -3921,13 +4005,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 682400151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 275, y: -435, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &682400155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3977,8 +4059,8 @@ GameObject:
   - component: {fileID: 683474085}
   - component: {fileID: 683474089}
   - component: {fileID: 683474088}
-  - component: {fileID: 683474087}
   - component: {fileID: 683474086}
+  - component: {fileID: 683474087}
   m_Layer: 5
   m_Name: Cell1_4
   m_TagString: Cells
@@ -4040,13 +4122,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 683474084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 274, y: 342, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &683474088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4214,8 +4294,8 @@ GameObject:
   - component: {fileID: 749467090}
   - component: {fileID: 749467094}
   - component: {fileID: 749467093}
-  - component: {fileID: 749467092}
   - component: {fileID: 749467091}
+  - component: {fileID: 749467092}
   m_Layer: 5
   m_Name: Cell5_8
   m_TagString: Cells
@@ -4277,13 +4357,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 749467089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 805.2, y: -101, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &749467093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4412,8 +4490,8 @@ GameObject:
   - component: {fileID: 779207393}
   - component: {fileID: 779207397}
   - component: {fileID: 779207396}
-  - component: {fileID: 779207395}
   - component: {fileID: 779207394}
+  - component: {fileID: 779207395}
   m_Layer: 5
   m_Name: Cell0_5
   m_TagString: Cells
@@ -4475,13 +4553,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 779207392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 402.7, y: 447.1, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &779207396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4531,8 +4607,8 @@ GameObject:
   - component: {fileID: 793662994}
   - component: {fileID: 793662998}
   - component: {fileID: 793662997}
-  - component: {fileID: 793662996}
   - component: {fileID: 793662995}
+  - component: {fileID: 793662996}
   m_Layer: 5
   m_Name: Cell4_5
   m_TagString: Cells
@@ -4594,13 +4670,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 793662993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 402.7, y: 16.448, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &793662997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,8 +4724,8 @@ GameObject:
   - component: {fileID: 814446315}
   - component: {fileID: 814446319}
   - component: {fileID: 814446318}
-  - component: {fileID: 814446317}
   - component: {fileID: 814446316}
+  - component: {fileID: 814446317}
   m_Layer: 5
   m_Name: Cell6_2
   m_TagString: Cells
@@ -4713,13 +4787,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 814446314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 5, y: -204, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &814446318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4769,8 +4841,8 @@ GameObject:
   - component: {fileID: 820625852}
   - component: {fileID: 820625856}
   - component: {fileID: 820625855}
-  - component: {fileID: 820625854}
   - component: {fileID: 820625853}
+  - component: {fileID: 820625854}
   m_Layer: 5
   m_Name: Cell3_3
   m_TagString: Cells
@@ -4832,13 +4904,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 820625851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 142, y: 126.5, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &820625855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4888,8 +4958,8 @@ GameObject:
   - component: {fileID: 827245412}
   - component: {fileID: 827245416}
   - component: {fileID: 827245415}
-  - component: {fileID: 827245414}
   - component: {fileID: 827245413}
+  - component: {fileID: 827245414}
   m_Layer: 5
   m_Name: Cell0_6
   m_TagString: Cells
@@ -4951,13 +5021,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 827245411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 535, y: 444, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &827245415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5007,8 +5075,8 @@ GameObject:
   - component: {fileID: 844987581}
   - component: {fileID: 844987585}
   - component: {fileID: 844987584}
-  - component: {fileID: 844987583}
   - component: {fileID: 844987582}
+  - component: {fileID: 844987583}
   m_Layer: 5
   m_Name: Cell8_1
   m_TagString: Cells
@@ -5070,13 +5138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 844987580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -134, y: -435, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &844987584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5126,8 +5192,8 @@ GameObject:
   - component: {fileID: 849902614}
   - component: {fileID: 849902618}
   - component: {fileID: 849902617}
-  - component: {fileID: 849902616}
   - component: {fileID: 849902615}
+  - component: {fileID: 849902616}
   m_Layer: 5
   m_Name: Cell3_2
   m_TagString: Cells
@@ -5189,13 +5255,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 849902613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 11, y: 127, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &849902617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5245,8 +5309,8 @@ GameObject:
   - component: {fileID: 852440960}
   - component: {fileID: 852440964}
   - component: {fileID: 852440963}
-  - component: {fileID: 852440962}
   - component: {fileID: 852440961}
+  - component: {fileID: 852440962}
   m_Layer: 5
   m_Name: Cell4_1
   m_TagString: Cells
@@ -5308,13 +5372,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 852440959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -120, y: 18, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &852440963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5409,8 +5471,8 @@ GameObject:
   - component: {fileID: 864425377}
   - component: {fileID: 864425381}
   - component: {fileID: 864425380}
-  - component: {fileID: 864425379}
   - component: {fileID: 864425378}
+  - component: {fileID: 864425379}
   m_Layer: 5
   m_Name: Cell3_5
   m_TagString: Cells
@@ -5472,13 +5534,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 864425376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 401, y: 127.7, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &864425380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5528,8 +5588,8 @@ GameObject:
   - component: {fileID: 868735609}
   - component: {fileID: 868735613}
   - component: {fileID: 868735612}
-  - component: {fileID: 868735611}
   - component: {fileID: 868735610}
+  - component: {fileID: 868735611}
   m_Layer: 5
   m_Name: Cell7_5
   m_TagString: Cells
@@ -5591,13 +5651,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 868735608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 408, y: -323, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &868735612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5647,8 +5705,8 @@ GameObject:
   - component: {fileID: 906573623}
   - component: {fileID: 906573627}
   - component: {fileID: 906573626}
-  - component: {fileID: 906573625}
   - component: {fileID: 906573624}
+  - component: {fileID: 906573625}
   m_Layer: 5
   m_Name: Cell7_2
   m_TagString: Cells
@@ -5710,13 +5768,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 906573622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 5, y: -321, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &906573626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,13 +5906,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: NP_5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7707731576888749592, guid: bb3afdd543fc54140bc4da260a860ca2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb3afdd543fc54140bc4da260a860ca2, type: 3}
 --- !u!224 &948327588 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7139812713386121394, guid: bb3afdd543fc54140bc4da260a860ca2, type: 3}
   m_PrefabInstance: {fileID: 948327587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &948327589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7139812713386121397, guid: bb3afdd543fc54140bc4da260a860ca2, type: 3}
+  m_PrefabInstance: {fileID: 948327587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &948327590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948327589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 5
+  position: {x: -428, y: -199, z: 0}
+  prefab: {fileID: 948327589}
+  summonprefab: {fileID: 7954002305315438192, guid: ffd7ddb108acc3b4191ef51f5553ba40, type: 3}
 --- !u!1 &1004528991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5868,8 +5946,8 @@ GameObject:
   - component: {fileID: 1004528992}
   - component: {fileID: 1004528996}
   - component: {fileID: 1004528995}
-  - component: {fileID: 1004528994}
   - component: {fileID: 1004528993}
+  - component: {fileID: 1004528994}
   m_Layer: 5
   m_Name: Cell5_3
   m_TagString: Cells
@@ -5931,13 +6009,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1004528991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 142.7, y: -90.6, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1004528995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5987,8 +6063,8 @@ GameObject:
   - component: {fileID: 1047109654}
   - component: {fileID: 1047109658}
   - component: {fileID: 1047109657}
-  - component: {fileID: 1047109656}
   - component: {fileID: 1047109655}
+  - component: {fileID: 1047109656}
   m_Layer: 5
   m_Name: Cell5_4
   m_TagString: Cells
@@ -6050,13 +6126,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047109653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 273.1, y: -92.8, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1047109657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6106,8 +6180,8 @@ GameObject:
   - component: {fileID: 1072734011}
   - component: {fileID: 1072734015}
   - component: {fileID: 1072734014}
-  - component: {fileID: 1072734013}
   - component: {fileID: 1072734012}
+  - component: {fileID: 1072734013}
   m_Layer: 5
   m_Name: Cell2_2
   m_TagString: Cells
@@ -6169,13 +6243,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1072734010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 12.2, y: 238.1, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1072734014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6225,8 +6297,8 @@ GameObject:
   - component: {fileID: 1135577487}
   - component: {fileID: 1135577491}
   - component: {fileID: 1135577490}
-  - component: {fileID: 1135577489}
   - component: {fileID: 1135577488}
+  - component: {fileID: 1135577489}
   m_Layer: 5
   m_Name: Cell0_3
   m_TagString: Cells
@@ -6288,13 +6360,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135577486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 148.1, y: 448.9, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1135577490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6344,8 +6414,8 @@ GameObject:
   - component: {fileID: 1171268938}
   - component: {fileID: 1171268942}
   - component: {fileID: 1171268941}
-  - component: {fileID: 1171268940}
   - component: {fileID: 1171268939}
+  - component: {fileID: 1171268940}
   m_Layer: 5
   m_Name: Cell7_6
   m_TagString: Cells
@@ -6407,13 +6477,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1171268937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 547, y: -325, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1171268941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6567,8 +6635,8 @@ GameObject:
   - component: {fileID: 1279593448}
   - component: {fileID: 1279593452}
   - component: {fileID: 1279593451}
-  - component: {fileID: 1279593450}
   - component: {fileID: 1279593449}
+  - component: {fileID: 1279593450}
   m_Layer: 5
   m_Name: Cell0_7
   m_TagString: Cells
@@ -6630,13 +6698,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279593447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 662.5, y: 442.8, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1279593451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6686,8 +6752,8 @@ GameObject:
   - component: {fileID: 1283985687}
   - component: {fileID: 1283985691}
   - component: {fileID: 1283985690}
-  - component: {fileID: 1283985689}
   - component: {fileID: 1283985688}
+  - component: {fileID: 1283985689}
   m_Layer: 5
   m_Name: Cell4_6
   m_TagString: Cells
@@ -6749,13 +6815,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1283985686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 542, y: 13.3, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1283985690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6805,8 +6869,8 @@ GameObject:
   - component: {fileID: 1284372162}
   - component: {fileID: 1284372166}
   - component: {fileID: 1284372165}
-  - component: {fileID: 1284372164}
   - component: {fileID: 1284372163}
+  - component: {fileID: 1284372164}
   m_Layer: 5
   m_Name: Cell2_5
   m_TagString: Cells
@@ -6868,13 +6932,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284372161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 402.7, y: 234, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1284372165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7056,8 +7118,8 @@ GameObject:
   - component: {fileID: 1288513697}
   - component: {fileID: 1288513701}
   - component: {fileID: 1288513700}
-  - component: {fileID: 1288513699}
   - component: {fileID: 1288513698}
+  - component: {fileID: 1288513699}
   m_Layer: 5
   m_Name: Cell8_5
   m_TagString: Cells
@@ -7119,13 +7181,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288513696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 409, y: -437, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1288513700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7291,8 +7351,8 @@ GameObject:
   - component: {fileID: 1301483851}
   - component: {fileID: 1301483855}
   - component: {fileID: 1301483854}
-  - component: {fileID: 1301483853}
   - component: {fileID: 1301483852}
+  - component: {fileID: 1301483853}
   m_Layer: 5
   m_Name: Cell3_0
   m_TagString: Cells
@@ -7354,13 +7414,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1301483850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -246.9, y: 127, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1301483854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7494,13 +7552,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: NP_9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5859252964735122563, guid: 98f7ebccfa73075438bdcdf4004723c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98f7ebccfa73075438bdcdf4004723c2, type: 3}
 --- !u!224 &1306484581 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3116479092232989232, guid: 98f7ebccfa73075438bdcdf4004723c2, type: 3}
   m_PrefabInstance: {fileID: 1306484580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1306484582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3116479092232989239, guid: 98f7ebccfa73075438bdcdf4004723c2, type: 3}
+  m_PrefabInstance: {fileID: 1306484580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306484583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306484582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 9
+  position: {x: -548, y: -355, z: 0}
+  prefab: {fileID: 1306484582}
+  summonprefab: {fileID: 5148477719711248072, guid: 7a80c2a8d14f8784388c2c3d80a1d0dc, type: 3}
 --- !u!1 &1339697260
 GameObject:
   m_ObjectHideFlags: 0
@@ -7591,8 +7671,8 @@ GameObject:
   - component: {fileID: 1355053826}
   - component: {fileID: 1355053830}
   - component: {fileID: 1355053829}
-  - component: {fileID: 1355053828}
   - component: {fileID: 1355053827}
+  - component: {fileID: 1355053828}
   m_Layer: 5
   m_Name: Cell1_3
   m_TagString: Cells
@@ -7654,13 +7734,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355053825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 145, y: 342, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1355053829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7744,7 +7822,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1356080959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ae0853047a5b1b47aee175fa06513ee, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f2748c52268b54d836511668b6b59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab1: {fileID: 6917472061789551621, guid: 0187f5649ee25e949b43033346c9b77d, type: 3}
@@ -7756,87 +7834,6 @@ MonoBehaviour:
   prefab7: {fileID: 4782772065622305782, guid: 14d6695f3cb62ae4ea4e8b6cb918f3a1, type: 3}
   prefab8: {fileID: 5194572665308670264, guid: 1859cc490e9edce42a6efa21c7cf7cbf, type: 3}
   prefab9: {fileID: 5148477719711248072, guid: 7a80c2a8d14f8784388c2c3d80a1d0dc, type: 3}
-  cell0_0: {fileID: 330516151}
-  cell0_1: {fileID: 85697181}
-  cell0_2: {fileID: 277509083}
-  cell0_3: {fileID: 1135577486}
-  cell0_4: {fileID: 1447067062}
-  cell0_5: {fileID: 779207392}
-  cell0_6: {fileID: 827245411}
-  cell0_7: {fileID: 1279593447}
-  cell0_8: {fileID: 1896205}
-  cell1_0: {fileID: 142664620}
-  cell1_1: {fileID: 1929950444}
-  cell1_2: {fileID: 23531529}
-  cell1_3: {fileID: 1355053825}
-  cell1_4: {fileID: 683474084}
-  cell1_5: {fileID: 320759171}
-  cell1_6: {fileID: 335077782}
-  cell1_7: {fileID: 1481749567}
-  cell1_8: {fileID: 1905924354}
-  cell2_0: {fileID: 1477168558}
-  cell2_1: {fileID: 1515635148}
-  cell2_2: {fileID: 1072734010}
-  cell2_3: {fileID: 1362141018}
-  cell2_4: {fileID: 613375319}
-  cell2_5: {fileID: 1284372161}
-  cell2_6: {fileID: 2075834260}
-  cell2_7: {fileID: 1495094983}
-  cell2_8: {fileID: 1682146106}
-  cell3_0: {fileID: 1301483850}
-  cell3_1: {fileID: 1887716638}
-  cell3_2: {fileID: 849902613}
-  cell3_3: {fileID: 820625851}
-  cell3_4: {fileID: 1427784000}
-  cell3_5: {fileID: 864425376}
-  cell3_6: {fileID: 1555035928}
-  cell3_7: {fileID: 1789014873}
-  cell3_8: {fileID: 309575201}
-  cell4_0: {fileID: 674154705}
-  cell4_1: {fileID: 852440959}
-  cell4_2: {fileID: 1995229742}
-  cell4_3: {fileID: 527023301}
-  cell4_4: {fileID: 1637841575}
-  cell4_5: {fileID: 793662993}
-  cell4_6: {fileID: 1283985686}
-  cell4_7: {fileID: 389250108}
-  cell4_8: {fileID: 391003570}
-  cell5_0: {fileID: 1548635961}
-  cell5_1: {fileID: 2096111391}
-  cell5_2: {fileID: 2144146705}
-  cell5_3: {fileID: 1004528991}
-  cell5_4: {fileID: 1047109653}
-  cell5_5: {fileID: 2129887658}
-  cell5_6: {fileID: 437062965}
-  cell5_7: {fileID: 2138966541}
-  cell5_8: {fileID: 749467089}
-  cell6_0: {fileID: 1825891163}
-  cell6_1: {fileID: 1888222650}
-  cell6_2: {fileID: 814446314}
-  cell6_3: {fileID: 1755083203}
-  cell6_4: {fileID: 80663597}
-  cell6_5: {fileID: 1451592965}
-  cell6_6: {fileID: 1690692997}
-  cell6_7: {fileID: 273184140}
-  cell6_8: {fileID: 373242604}
-  cell7_0: {fileID: 2085541993}
-  cell7_1: {fileID: 1932381107}
-  cell7_2: {fileID: 906573622}
-  cell7_3: {fileID: 102426005}
-  cell7_4: {fileID: 1617458630}
-  cell7_5: {fileID: 868735608}
-  cell7_6: {fileID: 1171268937}
-  cell7_7: {fileID: 362239016}
-  cell7_8: {fileID: 246126904}
-  cell8_0: {fileID: 476379868}
-  cell8_1: {fileID: 844987580}
-  cell8_2: {fileID: 2051833934}
-  cell8_3: {fileID: 1442373952}
-  cell8_4: {fileID: 682400151}
-  cell8_5: {fileID: 1288513696}
-  cell8_6: {fileID: 616219775}
-  cell8_7: {fileID: 502646779}
-  cell8_8: {fileID: 1744257970}
 --- !u!1 &1362141018
 GameObject:
   m_ObjectHideFlags: 0
@@ -7848,8 +7845,8 @@ GameObject:
   - component: {fileID: 1362141019}
   - component: {fileID: 1362141023}
   - component: {fileID: 1362141022}
-  - component: {fileID: 1362141021}
   - component: {fileID: 1362141020}
+  - component: {fileID: 1362141021}
   m_Layer: 5
   m_Name: Cell2_3
   m_TagString: Cells
@@ -7911,13 +7908,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1362141018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 148, y: 236, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1362141022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8055,13 +8050,35 @@ PrefabInstance:
       propertyPath: m_TagString
       value: LeftNumbers
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 14440777514086162, guid: 1c25add7ce1d8c64e86cd0130f9d7e8c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c25add7ce1d8c64e86cd0130f9d7e8c, type: 3}
 --- !u!224 &1396944166 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5230330614974354003, guid: 1c25add7ce1d8c64e86cd0130f9d7e8c, type: 3}
   m_PrefabInstance: {fileID: 1396944165}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1396944167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5230330614974354004, guid: 1c25add7ce1d8c64e86cd0130f9d7e8c, type: 3}
+  m_PrefabInstance: {fileID: 1396944165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1396944168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396944167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 2
+  position: {x: -772, y: -199, z: 0}
+  prefab: {fileID: 1396944167}
+  summonprefab: {fileID: 8746809846129400297, guid: baee2445050579d469382dd1e87a917a, type: 3}
 --- !u!1 &1427784000
 GameObject:
   m_ObjectHideFlags: 0
@@ -8073,8 +8090,8 @@ GameObject:
   - component: {fileID: 1427784001}
   - component: {fileID: 1427784005}
   - component: {fileID: 1427784004}
-  - component: {fileID: 1427784003}
   - component: {fileID: 1427784002}
+  - component: {fileID: 1427784003}
   m_Layer: 5
   m_Name: Cell3_4
   m_TagString: Cells
@@ -8136,13 +8153,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1427784000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 273, y: 126.5, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1427784004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8192,8 +8207,8 @@ GameObject:
   - component: {fileID: 1442373953}
   - component: {fileID: 1442373957}
   - component: {fileID: 1442373956}
-  - component: {fileID: 1442373955}
   - component: {fileID: 1442373954}
+  - component: {fileID: 1442373955}
   m_Layer: 5
   m_Name: Cell8_3
   m_TagString: Cells
@@ -8255,13 +8270,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442373952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 145, y: -433, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1442373956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8311,8 +8324,8 @@ GameObject:
   - component: {fileID: 1447067063}
   - component: {fileID: 1447067067}
   - component: {fileID: 1447067066}
-  - component: {fileID: 1447067065}
   - component: {fileID: 1447067064}
+  - component: {fileID: 1447067065}
   m_Layer: 5
   m_Name: Cell0_4
   m_TagString: Cells
@@ -8374,13 +8387,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447067062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 276.5, y: 446.8, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1447067066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8430,8 +8441,8 @@ GameObject:
   - component: {fileID: 1451592966}
   - component: {fileID: 1451592970}
   - component: {fileID: 1451592969}
-  - component: {fileID: 1451592968}
   - component: {fileID: 1451592967}
+  - component: {fileID: 1451592968}
   m_Layer: 5
   m_Name: Cell6_5
   m_TagString: Cells
@@ -8493,13 +8504,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451592965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 409, y: -212, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1451592969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8549,8 +8558,8 @@ GameObject:
   - component: {fileID: 1477168559}
   - component: {fileID: 1477168563}
   - component: {fileID: 1477168562}
-  - component: {fileID: 1477168561}
   - component: {fileID: 1477168560}
+  - component: {fileID: 1477168561}
   m_Layer: 5
   m_Name: Cell2_0
   m_TagString: Cells
@@ -8612,13 +8621,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1477168558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -246.9, y: 240.1, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1477168562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8668,8 +8675,8 @@ GameObject:
   - component: {fileID: 1481749568}
   - component: {fileID: 1481749572}
   - component: {fileID: 1481749571}
-  - component: {fileID: 1481749570}
   - component: {fileID: 1481749569}
+  - component: {fileID: 1481749570}
   m_Layer: 5
   m_Name: Cell1_7
   m_TagString: Cells
@@ -8731,13 +8738,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481749567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 665.7, y: 339.3, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1481749571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8853,8 +8858,8 @@ GameObject:
   - component: {fileID: 1495094984}
   - component: {fileID: 1495094988}
   - component: {fileID: 1495094987}
-  - component: {fileID: 1495094986}
   - component: {fileID: 1495094985}
+  - component: {fileID: 1495094986}
   m_Layer: 5
   m_Name: Cell2_7
   m_TagString: Cells
@@ -8916,13 +8921,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1495094983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 667.9, y: 231.9, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1495094987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8972,8 +8975,8 @@ GameObject:
   - component: {fileID: 1515635149}
   - component: {fileID: 1515635153}
   - component: {fileID: 1515635152}
-  - component: {fileID: 1515635151}
   - component: {fileID: 1515635150}
+  - component: {fileID: 1515635151}
   m_Layer: 5
   m_Name: Cell2_1
   m_TagString: Cells
@@ -9035,13 +9038,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1515635148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -114.6, y: 239.4, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1515635152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9091,8 +9092,8 @@ GameObject:
   - component: {fileID: 1548635962}
   - component: {fileID: 1548635966}
   - component: {fileID: 1548635965}
-  - component: {fileID: 1548635964}
   - component: {fileID: 1548635963}
+  - component: {fileID: 1548635964}
   m_Layer: 5
   m_Name: Cell5_0
   m_TagString: Cells
@@ -9154,13 +9155,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548635961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -252, y: -89, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1548635965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9210,8 +9209,8 @@ GameObject:
   - component: {fileID: 1555035929}
   - component: {fileID: 1555035933}
   - component: {fileID: 1555035932}
-  - component: {fileID: 1555035931}
   - component: {fileID: 1555035930}
+  - component: {fileID: 1555035931}
   m_Layer: 5
   m_Name: Cell3_6
   m_TagString: Cells
@@ -9273,13 +9272,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555035928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 536.5, y: 121.3, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1555035932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9329,8 +9326,8 @@ GameObject:
   - component: {fileID: 1617458631}
   - component: {fileID: 1617458635}
   - component: {fileID: 1617458634}
-  - component: {fileID: 1617458633}
   - component: {fileID: 1617458632}
+  - component: {fileID: 1617458633}
   m_Layer: 5
   m_Name: Cell7_4
   m_TagString: Cells
@@ -9392,13 +9389,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617458630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 275, y: -321, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1617458634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9448,8 +9443,8 @@ GameObject:
   - component: {fileID: 1637841576}
   - component: {fileID: 1637841580}
   - component: {fileID: 1637841579}
-  - component: {fileID: 1637841578}
   - component: {fileID: 1637841577}
+  - component: {fileID: 1637841578}
   m_Layer: 5
   m_Name: Cell4_4
   m_TagString: Cells
@@ -9511,13 +9506,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637841575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 272.26, y: 16.448, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1637841579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9604,8 +9597,8 @@ GameObject:
   - component: {fileID: 1682146107}
   - component: {fileID: 1682146111}
   - component: {fileID: 1682146110}
-  - component: {fileID: 1682146109}
   - component: {fileID: 1682146108}
+  - component: {fileID: 1682146109}
   m_Layer: 5
   m_Name: Cell2_8
   m_TagString: Cells
@@ -9667,13 +9660,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682146106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 799.4, y: 231, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1682146110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9723,8 +9714,8 @@ GameObject:
   - component: {fileID: 1690692998}
   - component: {fileID: 1690693002}
   - component: {fileID: 1690693001}
-  - component: {fileID: 1690693000}
   - component: {fileID: 1690692999}
+  - component: {fileID: 1690693000}
   m_Layer: 5
   m_Name: Cell6_6
   m_TagString: Cells
@@ -9786,13 +9777,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690692997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 542, y: -212, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1690693001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9842,8 +9831,8 @@ GameObject:
   - component: {fileID: 1744257971}
   - component: {fileID: 1744257975}
   - component: {fileID: 1744257974}
-  - component: {fileID: 1744257973}
   - component: {fileID: 1744257972}
+  - component: {fileID: 1744257973}
   m_Layer: 5
   m_Name: Cell8_8
   m_TagString: Cells
@@ -9905,13 +9894,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1744257970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 815, y: -441, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1744257974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9961,8 +9948,8 @@ GameObject:
   - component: {fileID: 1755083204}
   - component: {fileID: 1755083208}
   - component: {fileID: 1755083207}
-  - component: {fileID: 1755083206}
   - component: {fileID: 1755083205}
+  - component: {fileID: 1755083206}
   m_Layer: 5
   m_Name: Cell6_3
   m_TagString: Cells
@@ -10024,13 +10011,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1755083203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 144, y: -206, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1755083207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10080,8 +10065,8 @@ GameObject:
   - component: {fileID: 1789014874}
   - component: {fileID: 1789014878}
   - component: {fileID: 1789014877}
-  - component: {fileID: 1789014876}
   - component: {fileID: 1789014875}
+  - component: {fileID: 1789014876}
   m_Layer: 5
   m_Name: Cell3_7
   m_TagString: Cells
@@ -10143,13 +10128,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1789014873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 670, y: 124, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1789014877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10199,8 +10182,8 @@ GameObject:
   - component: {fileID: 1825891164}
   - component: {fileID: 1825891168}
   - component: {fileID: 1825891167}
-  - component: {fileID: 1825891166}
   - component: {fileID: 1825891165}
+  - component: {fileID: 1825891166}
   m_Layer: 5
   m_Name: Cell6_0
   m_TagString: Cells
@@ -10262,13 +10245,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825891163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -257, y: -206, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1825891167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10318,8 +10299,8 @@ GameObject:
   - component: {fileID: 1887716639}
   - component: {fileID: 1887716643}
   - component: {fileID: 1887716642}
-  - component: {fileID: 1887716641}
   - component: {fileID: 1887716640}
+  - component: {fileID: 1887716641}
   m_Layer: 5
   m_Name: Cell3_1
   m_TagString: Cells
@@ -10381,13 +10362,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1887716638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -120, y: 129, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1887716642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10437,8 +10416,8 @@ GameObject:
   - component: {fileID: 1888222651}
   - component: {fileID: 1888222655}
   - component: {fileID: 1888222654}
-  - component: {fileID: 1888222653}
   - component: {fileID: 1888222652}
+  - component: {fileID: 1888222653}
   m_Layer: 5
   m_Name: Cell6_1
   m_TagString: Cells
@@ -10500,13 +10479,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1888222650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -124, y: -204, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1888222654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10556,8 +10533,8 @@ GameObject:
   - component: {fileID: 1905924355}
   - component: {fileID: 1905924359}
   - component: {fileID: 1905924358}
-  - component: {fileID: 1905924357}
   - component: {fileID: 1905924356}
+  - component: {fileID: 1905924357}
   m_Layer: 5
   m_Name: Cell1_8
   m_TagString: Cells
@@ -10619,13 +10596,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1905924354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 795.7, y: 337, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1905924358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10675,8 +10650,8 @@ GameObject:
   - component: {fileID: 1929950445}
   - component: {fileID: 1929950449}
   - component: {fileID: 1929950448}
-  - component: {fileID: 1929950447}
   - component: {fileID: 1929950446}
+  - component: {fileID: 1929950447}
   m_Layer: 5
   m_Name: Cell1_1
   m_TagString: Cells
@@ -10738,13 +10713,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929950444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -116, y: 347, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1929950448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10794,8 +10767,8 @@ GameObject:
   - component: {fileID: 1932381108}
   - component: {fileID: 1932381112}
   - component: {fileID: 1932381111}
-  - component: {fileID: 1932381110}
   - component: {fileID: 1932381109}
+  - component: {fileID: 1932381110}
   m_Layer: 5
   m_Name: Cell7_1
   m_TagString: Cells
@@ -10857,13 +10830,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1932381107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -132, y: -319, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1932381111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11084,13 +11055,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7125608455013721869, guid: 0ca5a67b233cd674a98764c5f10a4041, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0ca5a67b233cd674a98764c5f10a4041, type: 3}
 --- !u!224 &1971541724 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3223826989685700727, guid: 0ca5a67b233cd674a98764c5f10a4041, type: 3}
   m_PrefabInstance: {fileID: 1971541723}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971541725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223826989685700720, guid: 0ca5a67b233cd674a98764c5f10a4041, type: 3}
+  m_PrefabInstance: {fileID: 1971541723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1971541726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971541725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16736c43fbb9f6044b50209b06788c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 3
+  position: {x: -663, y: -199, z: 0}
+  prefab: {fileID: 1971541725}
+  summonprefab: {fileID: 7999457847445861456, guid: 62f8724ca469ae943ae246a01f6b67d3, type: 3}
 --- !u!1 &1995229742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11102,8 +11095,8 @@ GameObject:
   - component: {fileID: 1995229743}
   - component: {fileID: 1995229747}
   - component: {fileID: 1995229746}
-  - component: {fileID: 1995229745}
   - component: {fileID: 1995229744}
+  - component: {fileID: 1995229745}
   m_Layer: 5
   m_Name: Cell4_2
   m_TagString: Cells
@@ -11165,13 +11158,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995229742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 10, y: 19.4, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &1995229746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11300,8 +11291,8 @@ GameObject:
   - component: {fileID: 2051833935}
   - component: {fileID: 2051833939}
   - component: {fileID: 2051833938}
-  - component: {fileID: 2051833937}
   - component: {fileID: 2051833936}
+  - component: {fileID: 2051833937}
   m_Layer: 5
   m_Name: Cell8_2
   m_TagString: Cells
@@ -11363,13 +11354,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051833934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -4, y: -431, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2051833938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11419,8 +11408,8 @@ GameObject:
   - component: {fileID: 2075834261}
   - component: {fileID: 2075834265}
   - component: {fileID: 2075834264}
-  - component: {fileID: 2075834263}
   - component: {fileID: 2075834262}
+  - component: {fileID: 2075834263}
   m_Layer: 5
   m_Name: Cell2_6
   m_TagString: Cells
@@ -11482,13 +11471,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2075834260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 538.3, y: 231.1, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2075834264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11538,8 +11525,8 @@ GameObject:
   - component: {fileID: 2085541994}
   - component: {fileID: 2085541998}
   - component: {fileID: 2085541997}
-  - component: {fileID: 2085541996}
   - component: {fileID: 2085541995}
+  - component: {fileID: 2085541996}
   m_Layer: 5
   m_Name: Cell7_0
   m_TagString: Cells
@@ -11601,13 +11588,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2085541993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -260.1, y: -315, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2085541997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11657,8 +11642,8 @@ GameObject:
   - component: {fileID: 2096111392}
   - component: {fileID: 2096111396}
   - component: {fileID: 2096111395}
-  - component: {fileID: 2096111394}
   - component: {fileID: 2096111393}
+  - component: {fileID: 2096111394}
   m_Layer: 5
   m_Name: Cell5_1
   m_TagString: Cells
@@ -11720,13 +11705,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096111391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: -123, y: -91, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2096111395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11776,8 +11759,8 @@ GameObject:
   - component: {fileID: 2129887659}
   - component: {fileID: 2129887663}
   - component: {fileID: 2129887662}
-  - component: {fileID: 2129887661}
   - component: {fileID: 2129887660}
+  - component: {fileID: 2129887661}
   m_Layer: 5
   m_Name: Cell5_5
   m_TagString: Cells
@@ -11839,13 +11822,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2129887658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 401.4, y: -95.1, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2129887662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11895,8 +11876,8 @@ GameObject:
   - component: {fileID: 2138966542}
   - component: {fileID: 2138966546}
   - component: {fileID: 2138966545}
-  - component: {fileID: 2138966544}
   - component: {fileID: 2138966543}
+  - component: {fileID: 2138966544}
   m_Layer: 5
   m_Name: Cell5_7
   m_TagString: Cells
@@ -11958,13 +11939,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2138966541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 673.7, y: -95.15, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2138966545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12014,8 +11993,8 @@ GameObject:
   - component: {fileID: 2144146706}
   - component: {fileID: 2144146710}
   - component: {fileID: 2144146709}
-  - component: {fileID: 2144146708}
   - component: {fileID: 2144146707}
+  - component: {fileID: 2144146708}
   m_Layer: 5
   m_Name: Cell5_2
   m_TagString: Cells
@@ -12077,13 +12056,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144146705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecb4240b0420b74581d5c86d5c9d895, type: 3}
+  m_Script: {fileID: 11500000, guid: 629f7d82e51112140aa67e7538d70692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
   answer: 0
-  pos: {x: 7, y: -91, z: 0}
-  GameManager: {fileID: 286030075}
 --- !u!114 &2144146709
 MonoBehaviour:
   m_ObjectHideFlags: 0

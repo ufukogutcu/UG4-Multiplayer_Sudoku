@@ -8,11 +8,16 @@ public class CellData_vs : MonoBehaviour
     public int current = 0;
     public int answer = 0;
 
-    public Vector3 pos;
+    private Vector3 pos;
 
     private GameObject currentobject;
 
-    public GameObject GameManager;
+    private GameObject GameManager;
+
+    void Start() {
+        pos = gameObject.GetComponent<RectTransform>().anchoredPosition;
+        GameManager = GameObject.Find("GameManager");
+    }
     
     void OnCollisionEnter2D(Collision2D col) {
         if (current==0)
