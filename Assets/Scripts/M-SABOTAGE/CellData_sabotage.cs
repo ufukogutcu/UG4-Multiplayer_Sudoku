@@ -84,9 +84,13 @@ public class CellData_sabotage : MonoBehaviour
         }
         else
         {
+            pos = gameObject.GetComponent<RectTransform>().anchoredPosition;
             GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
+            if (!GameManager){
+                GameManager = GameObject.Find("GameManager");
+            }
             GameManager_sabotage manager = GameManager.GetComponent("GameManager_sabotage") as GameManager_sabotage;
             manager.FilledOneCell();
         }

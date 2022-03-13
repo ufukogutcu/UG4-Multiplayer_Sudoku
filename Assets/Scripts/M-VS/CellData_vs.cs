@@ -84,9 +84,13 @@ public class CellData_vs : MonoBehaviour
         }
         else
         {
+            pos = gameObject.GetComponent<RectTransform>().anchoredPosition;
             GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             currentobject = obj;
+            if (!GameManager){
+                GameManager = GameObject.Find("GameManager");
+            }
             GameManager_vs manager = GameManager.GetComponent("GameManager_vs") as GameManager_vs;
             manager.FilledOneCell();
         }
