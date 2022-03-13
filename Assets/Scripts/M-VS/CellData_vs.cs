@@ -77,7 +77,7 @@ public class CellData_vs : MonoBehaviour
 
         current = currvalue;
         answer = ansvalue;
-            
+
         if (currvalue == 0)
         {
             currentobject = null;

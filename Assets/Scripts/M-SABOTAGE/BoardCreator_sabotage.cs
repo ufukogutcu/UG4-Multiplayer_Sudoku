@@ -236,8 +236,12 @@ public class BoardCreator_sabotage : MonoBehaviour
         while(true){
             solution_board = generate_board();
             board = generate_unsolved_board(solution_board);
-            if(hasZero(board));
+            if(hasZero(board)==true){
                 break;
+            }
+            else{
+                board = new int[9,9];
+            }
         }
         
         for (int i = 0; i < 9;i++) {
