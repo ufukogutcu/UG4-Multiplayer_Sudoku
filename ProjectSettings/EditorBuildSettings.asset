@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MULTI-VS.unity
     guid: 1515986966b06e24b9cd61f5d10c2de7
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerLost.unity
+    guid: 73e5d37b90df52b45a04b2dad2196d6d
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerWon.unity
+    guid: 0f9e8c24c26267246ba8156c104611b5
   m_configObjects: {}

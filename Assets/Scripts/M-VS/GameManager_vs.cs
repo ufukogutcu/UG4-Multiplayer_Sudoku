@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class GameManager_vs : MonoBehaviour{
+public class GameManager_vs : MonoBehaviourPunCallbacks
+{
 
     private int strikes = 0;
     public GameObject strike0;
@@ -31,13 +34,31 @@ public class GameManager_vs : MonoBehaviour{
     }
 
     void EndGame(){
-        SceneManager.LoadScene("SingleGameOver");
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("win", RpcTarget.All);
+        SceneManager.LoadScene("MultiplayerLost");
+    }
+
+    void WonGame(){
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("lose", RpcTarget.All);
+        SceneManager.LoadScene("MultiplayerWon");
+    }
+
+    [PunRPC]
+    private void lose(){
+        SceneManager.LoadScene("MultiplayerLost");
+    }
+
+    [PunRPC]
+    private void win(){
+        SceneManager.LoadScene("MultiplayerWon");
     }
 
     public void FilledOneCell(){
         filled_cells++;
         if(filled_cells==81)
-            SceneManager.LoadScene("SingleWon");
+            WonGame();
     }
 
     public void add_strike(){
