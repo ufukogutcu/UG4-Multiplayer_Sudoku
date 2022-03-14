@@ -16,12 +16,25 @@ public class GameManager_sabotage : MonoBehaviourPunCallbacks
 
     public Vector3 strike_pos;
 
+    public Vector3 topleft;
+    public Vector3 top;
+    public Vector3 topright;
+    public Vector3 left;
+    public Vector3 middle;
+    public Vector3 right;
+    public Vector3 bottomleft;
+    public Vector3 bottom;
+    public Vector3 bottomright;
+
+    public GameObject sabotage_box;
+
     public Text timer;
     private float starting_time;
 
     private int filled_cells=0;
 
     void Start(){
+        PhotonView photonView = PhotonView.Get(this);
         if(Settings_sabotage.notimer){
             Destroy(timer);
         }
@@ -33,14 +46,50 @@ public class GameManager_sabotage : MonoBehaviourPunCallbacks
         strike0.transform.SetParent(GameObject.Find("Strikes").transform, false);
     }
 
+    private void use_time(){
+        starting_time = starting_time - Settings_sabotage.sabotagecost;
+    }
+
+    public void sabotage(string box){
+        use_time();
+        photonView.RPC("sabotaged", RpcTarget.All, box);
+    }
+
+    [PunRPC]
+    private void sabotaged(string box){
+        Vector3 pos;
+        if (box=="topleft")
+            pos = topleft;
+        else if (box=="top")
+            pos = top;
+        else if (box=="topright")
+            pos = topright;
+        else if (box=="left")
+            pos = left;
+        else if (box=="middle")
+            pos = middle;
+        else if (box=="right")
+            pos = right;
+        else if (box=="bottomleft")
+            pos = bottomleft;
+        else if (box=="bottom")
+            pos = bottom;
+        else if (box=="bottomright")
+            pos = bottomright;
+        else
+            pos = middle;
+
+        GameObject obj = Instantiate(sabotage_box, pos, Quaternion.identity);
+        obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
+
+    }
+
     void EndGame(){
-        PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("win", RpcTarget.All);
         SceneManager.LoadScene("MultiplayerLost");
     }
 
     void WonGame(){
-        PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("lose", RpcTarget.All);
         SceneManager.LoadScene("MultiplayerWon");
     }

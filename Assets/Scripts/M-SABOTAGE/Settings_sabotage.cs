@@ -13,4 +13,6 @@ public class Settings_sabotage : MonoBehaviour
     public static int hard_n = 50;
 
     public static float timelimit = (10) *60;
+    public static int sabotagecost = 30;
+    public static int sabotagelength = 5;
 }
