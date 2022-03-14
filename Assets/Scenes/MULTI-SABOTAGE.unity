@@ -400,7 +400,7 @@ MonoBehaviour:
   bottomleft: {x: -127, y: -319, z: 0}
   bottom: {x: 278, y: -325, z: 0}
   bottomright: {x: 680, y: -328, z: 0}
-  sabotage_box: {fileID: 5150161877984508353, guid: 191dc7b8bb0318b45936199dbbf8a5bc, type: 3}
+  sabotage_box: {fileID: 5355150511793189530, guid: 191dc7b8bb0318b45936199dbbf8a5bc, type: 3}
   timer: {fileID: 1610807096}
 --- !u!4 &72289295
 Transform:
