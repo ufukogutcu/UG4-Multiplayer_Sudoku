@@ -52,7 +52,7 @@ public class GameManager_sabotage : MonoBehaviourPunCallbacks
 
     public void sabotage(string box){
         use_time();
-        photonView.RPC("sabotaged", RpcTarget.All, box);
+        photonView.RPC("sabotaged", RpcTarget.Others, box);
     }
 
     [PunRPC]
